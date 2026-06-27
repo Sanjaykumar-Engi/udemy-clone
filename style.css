@@ -147,9 +147,9 @@ position: relative;
 
 }
 .course-card{
-    width: 250px;
-    padding:20px;
-    
+    flex-grow: 1;
+    flex-basis:20%;
+    margin:5px;
 }
 .course-card img{
     width:100%;
@@ -211,4 +211,21 @@ gap:10px;
 
 .footer__one p{
     margin:20px;
+}
+
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+}
+}
+
+
+
+@media screen and (max-width:600px){
+   .course-card{
+    flex-basis: 40%;
+   }
+
+   
 }
